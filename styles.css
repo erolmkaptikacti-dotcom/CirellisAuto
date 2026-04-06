@@ -538,7 +538,7 @@
     flex-shrink: 0;
     margin-top: 9px;
   }
-  /* INTERIOR PACKAGES PHOTO BACKGROUND */
+  /* PHOTO BACKGROUND PACKAGES */
   .interior-bg {
     background-image:
       linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
@@ -546,11 +546,19 @@
     background-size: cover;
     background-position: center 38%;
   }
-  .interior-bg .package-name { color: var(--white); }
-  .interior-bg .package-desc { color: var(--grey-xlight); }
-  .interior-bg .service-package {
-    border-bottom-color: rgba(255,255,255,0.1);
+  .motorcycle-bg {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
+      url('Motorcycle Pic.jpg');
+    background-size: cover;
+    background-position: center 45%;
   }
+  .interior-bg .package-name,
+  .motorcycle-bg .package-name { color: var(--white); }
+  .interior-bg .package-desc,
+  .motorcycle-bg .package-desc { color: var(--grey-xlight); }
+  .interior-bg .service-package,
+  .motorcycle-bg .service-package { border-bottom: none; }
 
   .service-detail-sidebar {
     position: sticky;
