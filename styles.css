@@ -552,6 +552,33 @@
     border-bottom-color: rgba(255,255,255,0.1);
   }
 
+  /* FULL DETAIL PACKAGES PHOTO BACKGROUNDS */
+  .full-detail-top-bg {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
+      url('carpet pic.png');
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .full-detail-top-bg .package-name { color: var(--white); }
+  .full-detail-top-bg .package-desc { color: var(--grey-xlight); }
+  .full-detail-top-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
+  .full-detail-bottom-bg {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
+      url('seats pic.png');
+    background-size: cover;
+    background-position: center 40%;
+  }
+  .full-detail-bottom-bg .package-name { color: var(--white); }
+  .full-detail-bottom-bg .package-desc { color: var(--grey-xlight); }
+  .full-detail-bottom-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
   /* CERAMIC COATING PACKAGES PHOTO BACKGROUND */
   .ceramic-bg {
     background-image:
