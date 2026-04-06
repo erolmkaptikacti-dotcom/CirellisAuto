@@ -538,6 +538,66 @@
     flex-shrink: 0;
     margin-top: 9px;
   }
+  /* SERVICE FEATURED PHOTO */
+  .service-feature-image {
+    margin-bottom: 72px;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .service-photo {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+    filter: brightness(0.88) contrast(1.06) saturate(1.08);
+    transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                filter 0.6s ease;
+  }
+  .service-feature-image:hover .service-photo {
+    transform: scale(1.04);
+    filter: brightness(0.96) contrast(1.03) saturate(1.1);
+  }
+  .service-photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 48px 36px;
+    background: linear-gradient(to top, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.3) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1;
+  }
+  .service-photo-label {
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-weight: 500;
+  }
+  .service-photo-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+  .service-photo-caption {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2.5vw, 32px);
+    font-weight: 300;
+    color: var(--white);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+  }
+
   .service-detail-sidebar {
     position: sticky;
     top: 100px;
@@ -601,6 +661,8 @@
     .service-detail-body { grid-template-columns: 1fr; gap: 48px; }
     .service-detail-sidebar { position: static; }
     .services-explore-cta { margin-top: 40px; padding-top: 40px; }
+    .service-photo { height: 280px; object-position: center 30%; }
+    .service-photo-overlay { padding: 60px 24px 24px; }
   }
 
   /* PROCESS */
