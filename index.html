@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cirelli's Automotive Detailing — Flawless. Every Time.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">
+    <span class="nav-logo-main">Cirelli's</span>
+    <span class="nav-logo-sub">Automotive Detailing</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#booking">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book Now</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-lines"></div>
+
+  <p class="hero-eyebrow">Buffalo's Premier Detailing Studio</p>
+  <h1 class="hero-title">
+    <span>Precision.</span>
+    <span>Perfection.</span>
+    <span>Protection.</span>
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-desc">
+      Your vehicle is more than transportation. It's a statement.
+      We restore, protect, and perfect every surface — delivering
+      results that exceed dealership quality.
+    </p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Book a Detail</a>
+      <a href="#services" class="btn-ghost">Explore Services</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <span class="stat-number">5.0<span class="stat-suffix">★</span></span>
+    <span class="stat-label">Google Rating</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
+    <span class="stat-number">3<span class="stat-suffix">yr</span></span>
+    <span class="stat-label">Ceramic Protection</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-2">
+    <span class="stat-number">100<span class="stat-suffix">%</span></span>
+    <span class="stat-label">Satisfaction Rate</span>
+  </div>
+  <div class="stat-item reveal reveal-delay-3">
+    <span class="stat-number">48<span class="stat-suffix">hr</span></span>
+    <span class="stat-label">Avg. Turnaround</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <div>
+      <p class="section-eyebrow">What We Do</p>
+      <h2 class="section-title">Crafted for<br><em>every vehicle</em></h2>
+    </div>
+    <p class="services-intro">
+      From daily drivers to collector classics, motorcycles to commercial fleets —
+      every vehicle that enters our studio receives the same obsessive
+      attention to detail. No shortcuts. No compromises.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <span class="service-icon">🛡️</span>
+      <h3 class="service-name">Ceramic Coating</h3>
+      <p class="service-desc">Professional-grade ceramic protection that bonds to your paint, creating a hydrophobic layer that repels water, dirt, and contaminants. Available in 1-year and 3-year packages for lasting protection.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-num">02</span>
+      <span class="service-icon">✨</span>
+      <h3 class="service-name">Paint Correction</h3>
+      <p class="service-desc">Multi-stage machine polishing that eliminates swirl marks, scratches, and oxidation — restoring depth and gloss to paint that makes the finish look better than the day it left the factory.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-num">03</span>
+      <span class="service-icon">🪣</span>
+      <h3 class="service-name">Full Detail</h3>
+      <p class="service-desc">A comprehensive interior and exterior treatment. Every surface cleaned, conditioned, and perfected — inside and out. The complete transformation your vehicle deserves.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">04</span>
+      <span class="service-icon">🏍️</span>
+      <h3 class="service-name">Motorcycle Detailing</h3>
+      <p class="service-desc">Specialized detailing and ceramic coating for motorcycles. Complex surfaces, tight spaces, and chrome components treated with the same precision we apply to every four-wheeled vehicle.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-num">05</span>
+      <span class="service-icon">🚚</span>
+      <h3 class="service-name">Fleet Services</h3>
+      <p class="service-desc">Commercial fleet detailing for landscaping, snow removal, and trade vehicles. We handle the heavy-duty work — restoring heavily soiled vehicles to showroom standard.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-num">06</span>
+      <span class="service-icon">🔬</span>
+      <h3 class="service-name">Interior Detailing</h3>
+      <p class="service-desc">Deep cleaning of every interior surface — leather, fabric, trim, vents, and glass. Steam sanitization, conditioning, and deodorizing for a cabin that feels and smells brand new.</p>
+      <span class="service-arrow">↗</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item"><span class="marquee-dot"></span> Ceramic Coating</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Paint Correction</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Full Detail</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Motorcycle Detailing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Fleet Services</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Interior Restoration</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> 5-Star Rated</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Buffalo, NY</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Ceramic Coating</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Paint Correction</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Full Detail</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Motorcycle Detailing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Fleet Services</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Interior Restoration</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> 5-Star Rated</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Buffalo, NY</span>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-header reveal">
+    <p class="section-eyebrow">How It Works</p>
+    <h2 class="section-title">The Cirelli's <em>Process</em></h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-dot"><span class="step-dot-num">01</span></div>
+      <h3 class="step-title">Consultation</h3>
+      <p class="step-desc">We assess your vehicle's condition, discuss your goals, and recommend the right treatment package for your needs and budget.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-1">
+      <div class="step-dot"><span class="step-dot-num">02</span></div>
+      <h3 class="step-title">Decontamination</h3>
+      <p class="step-desc">A full wash, clay bar treatment, and surface decontamination to prepare the paint for correction and coating.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-2">
+      <div class="step-dot"><span class="step-dot-num">03</span></div>
+      <h3 class="step-title">Correction</h3>
+      <p class="step-desc">Machine polishing to eliminate imperfections, swirls, and scratches — revealing the true depth and gloss of your paint.</p>
+    </div>
+    <div class="process-step reveal reveal-delay-3">
+      <div class="step-dot"><span class="step-dot-num">04</span></div>
+      <h3 class="step-title">Protection</h3>
+      <p class="step-desc">Ceramic coating applied to lock in the results and protect your investment for years to come. The showroom moment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header reveal">
+    <div>
+      <p class="section-eyebrow">Client Reviews</p>
+      <h2 class="section-title">What people<br><em>are saying</em></h2>
+    </div>
+    <div class="reviews-rating">
+      <span class="rating-big">5.0</span>
+      <span class="stars">★★★★★</span>
+      <span class="rating-label">Google Reviews</span>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Hands down the best detail I've ever had. The ceramic coating made the paint pop like crazy. Car looks brand new again."</p>
+      <div class="review-author">
+        <div class="review-avatar">D</div>
+        <div>
+          <div class="review-name">Dev Patel</div>
+          <div class="review-tag">Ceramic Coating</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"My car honestly looks better than the day I bought it — every surface was spotless, inside and out. The professionalism really stood out."</p>
+      <div class="review-author">
+        <div class="review-avatar">C</div>
+        <div>
+          <div class="review-name">Clarence Jenkins</div>
+          <div class="review-tag">Full Detail</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Got a three year ceramic coat on my 2018 Jeep. Was super happy with how it came out — still looks really good to this day after 8 months."</p>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div>
+          <div class="review-name">JayWrong</div>
+          <div class="review-tag">3-Year Ceramic</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Absolutely iced my truck and motorcycle out with the 3-year ceramic coating. Very personable and trustworthy. Best place to take any vehicle."</p>
+      <div class="review-author">
+        <div class="review-avatar">I</div>
+        <div>
+          <div class="review-name">Isaiah White</div>
+          <div class="review-tag">Truck & Motorcycle</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Brought my Harley in — 2 day turnaround! Detail, paint correction, and ceramic coat. Excellent customer service. 10/10 recommend."</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Max Thomas</div>
+          <div class="review-tag">Motorcycle Detail</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"We have 5 landscaping and snow plow trucks that get absolutely filthy. Cirelli's is extremely detailed, professional, and a pleasure to work with."</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Mitchell Archibald</div>
+          <div class="review-tag">Commercial Fleet</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="why-visual">
+    <div class="why-box-main">
+      <div class="why-box-main-inner">DETAIL</div>
+    </div>
+    <div class="why-box-accent">
+      <p class="why-box-quote">"Better than the day I bought it — every single time."</p>
+    </div>
+    <div class="why-box-dot"></div>
+  </div>
+  <div class="why-content">
+    <p class="section-eyebrow">Why Cirelli's</p>
+    <h2 class="section-title reveal">The difference<br><em>is in the details</em></h2>
+    <ul class="why-list">
+      <li class="why-item reveal">
+        <span class="why-num">01</span>
+        <div class="why-text">
+          <strong>Obsessive Attention to Detail</strong>
+          <p>Every panel, every gap, every surface — inspected and treated. We don't stop until it's flawless.</p>
+        </div>
+      </li>
+      <li class="why-item reveal reveal-delay-1">
+        <span class="why-num">02</span>
+        <div class="why-text">
+          <strong>Professional-Grade Products</strong>
+          <p>We use only the highest-quality coatings, polishes, and compounds — the same trusted by professional detailers worldwide.</p>
+        </div>
+      </li>
+      <li class="why-item reveal reveal-delay-2">
+        <span class="why-num">03</span>
+        <div class="why-text">
+          <strong>Trusted by Individuals & Fleets</strong>
+          <p>From personal cars and motorcycles to five-vehicle commercial fleets — we've earned the trust of clients across Western New York.</p>
+        </div>
+      </li>
+      <li class="why-item reveal reveal-delay-3">
+        <span class="why-num">04</span>
+        <div class="why-text">
+          <strong>Results That Speak for Themselves</strong>
+          <p>Every review, every referral, every returned client tells the same story: Cirelli's delivers results that genuinely exceed expectations.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <p class="cta-label reveal">Ready to Transform Your Vehicle?</p>
+  <h2 class="cta-title reveal">
+    Your car deserves<br><em>to be flawless.</em>
+  </h2>
+  <div class="cta-actions reveal">
+    <a href="#booking" class="btn-primary">Book Your Detail</a>
+    <a href="tel:+17165550000" class="btn-ghost">Call Us Today</a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="booking-info reveal">
+    <p class="section-eyebrow">Get In Touch</p>
+    <h2 class="section-title">Book your<br><em>appointment</em></h2>
+    <p>Ready to see what Cirelli's can do for your vehicle? Fill out the form and we'll be in touch within 24 hours to confirm your appointment and walk you through the perfect service package.</p>
+    <div class="contact-items">
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div class="contact-detail">
+          <strong>Location</strong>
+          <span>Buffalo, New York</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">⏱️</span>
+        <div class="contact-detail">
+          <strong>Turnaround</strong>
+          <span>Most jobs completed in 24–48 hours</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">⭐</span>
+        <div class="contact-detail">
+          <strong>Rating</strong>
+          <span>5.0 Stars — Google Reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-form reveal reveal-delay-1">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-input" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-input" placeholder="Smith">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input type="email" class="form-input" placeholder="john@example.com">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" class="form-input" placeholder="(716) 555-0000">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Vehicle Year & Make</label>
+        <input type="text" class="form-input" placeholder="2022 BMW M3">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Service</label>
+        <select class="form-select">
+          <option value="">Select a service...</option>
+          <option>Ceramic Coating — 1 Year</option>
+          <option>Ceramic Coating — 3 Year</option>
+          <option>Paint Correction</option>
+          <option>Paint Correction + Ceramic</option>
+          <option>Full Interior & Exterior Detail</option>
+          <option>Motorcycle Detail</option>
+          <option>Fleet Services</option>
+          <option>Not Sure — Need Consultation</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Additional Notes</label>
+      <textarea class="form-textarea" placeholder="Tell us about your vehicle's condition, any concerns, or specific goals..."></textarea>
+    </div>
+    <button class="form-submit">Request Appointment</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo-main">Cirelli's</span>
+      <span class="nav-logo-sub">Automotive Detailing</span>
+      <p>Buffalo's premier automotive detailing studio. Ceramic coating, paint correction, and full detailing services for vehicles of every kind — delivered with uncompromising quality.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Ceramic Coating</a></li>
+        <li><a href="#services">Paint Correction</a></li>
+        <li><a href="#services">Full Detail</a></li>
+        <li><a href="#services">Motorcycle</a></li>
+        <li><a href="#services">Fleet Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#booking">Book Appointment</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Google Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Cirelli's Automotive Detailing. Buffalo, NY. All rights reserved.</span>
+    <span class="footer-tagline">Flawless. Every Time.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
