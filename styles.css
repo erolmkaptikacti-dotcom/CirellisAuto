@@ -552,11 +552,25 @@
     border-bottom-color: rgba(255,255,255,0.1);
   }
 
+  /* PAINT CORRECTION PACKAGES PHOTO BACKGROUND */
+  .paint-correction-bg {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
+      url('carpet pic.png');
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .paint-correction-bg .package-name { color: var(--white); }
+  .paint-correction-bg .package-desc { color: var(--grey-xlight); }
+  .paint-correction-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
   /* FULL DETAIL PACKAGES PHOTO BACKGROUNDS */
   .full-detail-top-bg {
     background-image:
       linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
-      url('carpet pic.png');
+      url('Tesla Interior.png');
     background-size: cover;
     background-position: center 50%;
   }
