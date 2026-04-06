@@ -22,34 +22,7 @@
     font-family: var(--font-body);
     font-weight: 300;
     overflow-x: hidden;
-    cursor: none;
   }
-
-  /* CUSTOM CURSOR */
-  .cursor {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background: var(--accent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
-  }
-  .cursor-ring {
-    position: fixed;
-    width: 36px;
-    height: 36px;
-    border: 1px solid rgba(200,169,110,0.5);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease;
-  }
-  .cursor.hover { width: 16px; height: 16px; }
-  .cursor-ring.hover { width: 52px; height: 52px; border-color: var(--accent); }
 
   /* NAV */
   nav {
@@ -113,7 +86,6 @@
     letter-spacing: 2.5px;
     text-transform: uppercase;
     font-family: var(--font-body);
-    cursor: none;
     transition: background 0.3s, color 0.3s;
     font-weight: 500;
   }
@@ -139,15 +111,6 @@
     background:
       radial-gradient(ellipse at 60% 40%, rgba(200,169,110,0.06) 0%, transparent 60%),
       linear-gradient(160deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
-    z-index: 0;
-  }
-  .hero-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-    background-size: 80px 80px;
     z-index: 0;
   }
   .hero-lines {
@@ -244,7 +207,6 @@
     font-family: var(--font-body);
     font-weight: 600;
     transition: background 0.3s, transform 0.3s;
-    cursor: none;
   }
   .btn-primary:hover {
     background: var(--accent);
@@ -263,7 +225,6 @@
     font-weight: 400;
     border: 1px solid rgba(255,255,255,0.15);
     transition: border-color 0.3s, color 0.3s;
-    cursor: none;
   }
   .btn-ghost:hover {
     border-color: var(--white);
@@ -395,7 +356,6 @@
     position: relative;
     overflow: hidden;
     transition: background 0.4s ease;
-    cursor: none;
   }
   .service-card:hover { background: rgba(255,255,255,0.02); }
   .service-card::after {
@@ -595,7 +555,6 @@
     background: var(--black);
     padding: 48px 40px;
     transition: background 0.3s;
-    cursor: none;
   }
   .review-card:hover { background: rgba(255,255,255,0.02); }
   .review-stars {
@@ -866,7 +825,7 @@
     border-color: var(--accent);
     background: rgba(200,169,110,0.03);
   }
-  .form-select { cursor: none; }
+  .form-select { cursor: pointer; }
   .form-select option { background: #1a1a1a; }
   .form-textarea { resize: vertical; min-height: 100px; }
   .form-submit {
@@ -879,7 +838,7 @@
     text-transform: uppercase;
     font-family: var(--font-body);
     font-weight: 600;
-    cursor: none;
+    cursor: pointer;
     transition: background 0.3s, transform 0.3s;
     margin-top: 8px;
     align-self: flex-start;
@@ -997,6 +956,4 @@
     .form-row { grid-template-columns: 1fr; }
     .footer-top { grid-template-columns: 1fr 1fr; }
     .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
-    body { cursor: auto; }
-    .cursor, .cursor-ring { display: none; }
   }

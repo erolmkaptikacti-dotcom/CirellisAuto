@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — Cirelli's Automotive Detailing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .book-hero {
+    padding: 160px 60px 100px;
+    background:
+      radial-gradient(ellipse at 60% 40%, rgba(200,169,110,0.06) 0%, transparent 60%),
+      linear-gradient(160deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%);
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .book-hero .section-eyebrow { margin-bottom: 20px; }
+  .book-hero .section-title { margin-bottom: 0; }
+
+  .book-body {
+    background: var(--grey-dark);
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+  .book-info .section-title { margin-bottom: 32px; }
+  .book-info > p {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--grey-light);
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .book-hero { padding: 120px 24px 60px; }
+    .book-body { padding: 60px 24px; grid-template-columns: 1fr; gap: 60px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">
+    <span class="nav-logo-main">Cirelli's</span>
+    <span class="nav-logo-sub">Automotive Detailing</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="book.html">Book</a></li>
+  </ul>
+  <button class="nav-cta" onclick="window.location.href='book.html'">Book Now</button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="book-hero">
+  <p class="section-eyebrow">Get In Touch</p>
+  <h1 class="section-title">Book your<br><em>appointment</em></h1>
+</div>
+
+<!-- BOOKING BODY -->
+<div class="book-body">
+  <div class="book-info">
+    <p>Ready to see what Cirelli's can do for your vehicle? Fill out the form and we'll be in touch within 24 hours to confirm your appointment and walk you through the perfect service package.</p>
+    <div class="contact-items">
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div class="contact-detail">
+          <strong>Location</strong>
+          <span>Buffalo, New York</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">⏱️</span>
+        <div class="contact-detail">
+          <strong>Turnaround</strong>
+          <span>Most jobs completed in 24–48 hours</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">⭐</span>
+        <div class="contact-detail">
+          <strong>Rating</strong>
+          <span>5.0 Stars — Google Reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-input" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-input" placeholder="Smith">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input type="email" class="form-input" placeholder="john@example.com">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" class="form-input" placeholder="(716) 555-0000">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Vehicle Year & Make</label>
+        <input type="text" class="form-input" placeholder="2022 BMW M3">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Service</label>
+        <select class="form-select">
+          <option value="">Select a service...</option>
+          <option>Ceramic Coating — 1 Year</option>
+          <option>Ceramic Coating — 3 Year</option>
+          <option>Paint Correction</option>
+          <option>Paint Correction + Ceramic</option>
+          <option>Full Interior & Exterior Detail</option>
+          <option>Motorcycle Detail</option>
+          <option>Fleet Services</option>
+          <option>Not Sure — Need Consultation</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Additional Notes</label>
+      <textarea class="form-textarea" placeholder="Tell us about your vehicle's condition, any concerns, or specific goals..."></textarea>
+    </div>
+    <button class="form-submit" id="bookSubmit">Request Appointment</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo-main">Cirelli's</span>
+      <span class="nav-logo-sub">Automotive Detailing</span>
+      <p>Buffalo's premier automotive detailing studio. Ceramic coating, paint correction, and full detailing services for vehicles of every kind — delivered with uncompromising quality.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="index.html#services">Ceramic Coating</a></li>
+        <li><a href="index.html#services">Paint Correction</a></li>
+        <li><a href="index.html#services">Full Detail</a></li>
+        <li><a href="index.html#services">Motorcycle</a></li>
+        <li><a href="index.html#services">Fleet Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="book.html">Book Appointment</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Google Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Cirelli's Automotive Detailing. Buffalo, NY. All rights reserved.</span>
+    <span class="footer-tagline">Flawless. Every Time.</span>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Form submit
+  const formSubmit = document.getElementById('bookSubmit');
+  if (formSubmit) {
+    formSubmit.addEventListener('click', function () {
+      this.textContent = 'Sending...';
+      setTimeout(() => {
+        this.textContent = 'Request Sent ✓';
+      }, 1000);
+    });
+  }
+</script>
+</body>
+</html>
