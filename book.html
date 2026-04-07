@@ -56,7 +56,21 @@
     <li><a href="book.html">Book</a></li>
   </ul>
   <button class="nav-cta" onclick="window.location.href='book.html'">Book Now</button>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" aria-label="Close menu" onclick="toggleMobileMenu()">&#x2715;</button>
+  <ul class="mobile-menu-links">
+    <li><a href="services.html" onclick="toggleMobileMenu()">Services</a></li>
+    <li><a href="index.html#process" onclick="toggleMobileMenu()">Process</a></li>
+    <li><a href="index.html#reviews" onclick="toggleMobileMenu()">Reviews</a></li>
+    <li><a href="book.html" onclick="toggleMobileMenu()">Book</a></li>
+  </ul>
+</div>
 
 <!-- PAGE HERO -->
 <div class="book-hero">
