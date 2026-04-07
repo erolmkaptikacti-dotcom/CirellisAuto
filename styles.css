@@ -489,7 +489,7 @@
   }
   .service-detail-top .service-num {
     font-family: var(--font-display);
-    font-size: 11px;
+    font-size: 22px;
     letter-spacing: 3px;
     color: var(--accent);
     min-width: 28px;
