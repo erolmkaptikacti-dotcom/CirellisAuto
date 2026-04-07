@@ -617,6 +617,20 @@
     border-bottom-color: rgba(255,255,255,0.1);
   }
 
+  /* EXTERIOR DETAILING PACKAGES PHOTO BACKGROUND */
+  .exterior-bg {
+    background-image:
+      linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
+      url('exterior pic.png');
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .exterior-bg .package-name { color: var(--white); }
+  .exterior-bg .package-desc { color: var(--grey-xlight); }
+  .exterior-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
   /* MOTORCYCLE PACKAGES PHOTO BACKGROUND */
   .motorcycle-bg {
     background-image:
