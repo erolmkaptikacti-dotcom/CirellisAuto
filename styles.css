@@ -624,6 +624,7 @@
   .ceramic-bg .package-desc { color: var(--grey-xlight); }
   .ceramic-bg .service-package {
     border-bottom-color: rgba(255,255,255,0.1);
+    padding: 40px 32px;
   }
 
   /* EXTERIOR DETAILING PACKAGES PHOTO BACKGROUND */
