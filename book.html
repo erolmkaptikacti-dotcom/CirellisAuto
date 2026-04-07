@@ -128,33 +128,35 @@
       </div>
     </div>
   </div>
-  <div class="booking-form">
+  <form class="booking-form" method="POST" action="https://formspree.io/erolmkaptikacti@gmail.com">
+    <input type="hidden" name="_subject" value="New Appointment Request — Cirelli's LLC.">
+    <input type="hidden" name="_next" value="book.html">
     <div class="form-row">
       <div class="form-group">
         <label class="form-label">First Name</label>
-        <input type="text" class="form-input" placeholder="John">
+        <input type="text" name="first_name" class="form-input" placeholder="John" required>
       </div>
       <div class="form-group">
         <label class="form-label">Last Name</label>
-        <input type="text" class="form-input" placeholder="Smith">
+        <input type="text" name="last_name" class="form-input" placeholder="Smith" required>
       </div>
     </div>
     <div class="form-group">
       <label class="form-label">Email Address</label>
-      <input type="email" class="form-input" placeholder="john@example.com">
+      <input type="email" name="email" class="form-input" placeholder="john@example.com" required>
     </div>
     <div class="form-group">
       <label class="form-label">Phone Number</label>
-      <input type="tel" class="form-input" placeholder="(716) 555-0000">
+      <input type="tel" name="phone" class="form-input" placeholder="(716) 555-0000">
     </div>
     <div class="form-row">
       <div class="form-group">
         <label class="form-label">Vehicle Year & Make</label>
-        <input type="text" class="form-input" placeholder="2022 BMW M3">
+        <input type="text" name="vehicle" class="form-input" placeholder="2022 BMW M3">
       </div>
       <div class="form-group">
         <label class="form-label">Service</label>
-        <select class="form-select">
+        <select name="service" class="form-select" required>
           <option value="">Select a service...</option>
           <option>Ceramic Coating — 1 Year</option>
           <option>Ceramic Coating — 3 Year</option>
@@ -173,10 +175,10 @@
     </div>
     <div class="form-group">
       <label class="form-label">Additional Notes</label>
-      <textarea class="form-textarea" placeholder="Tell us about your vehicle's condition, any concerns, or specific goals..."></textarea>
+      <textarea name="notes" class="form-textarea" placeholder="Tell us about your vehicle's condition, any concerns, or specific goals..."></textarea>
     </div>
-    <button class="form-submit" id="bookSubmit">Request Appointment</button>
-  </div>
+    <button type="submit" class="form-submit" id="bookSubmit">Request Appointment</button>
+  </form>
 </div>
 
 <!-- FOOTER -->
