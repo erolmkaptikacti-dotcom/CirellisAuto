@@ -409,6 +409,7 @@
     letter-spacing: 0.3px;
   }
   .service-arrow {
+    display: block;
     position: absolute;
     bottom: 44px;
     right: 44px;
@@ -416,7 +417,7 @@
     height: 20px;
     color: var(--grey-mid);
     transition: color 0.3s, transform 0.3s;
-    flex-shrink: 0;
+    overflow: visible;
   }
   .service-card:hover .service-arrow {
     color: var(--accent);
@@ -1324,7 +1325,7 @@
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
   .mobile-menu {
-    display: none;
+    display: flex;
     position: fixed;
     inset: 0;
     background: var(--black);
@@ -1333,11 +1334,14 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .mobile-menu.open {
-    display: flex;
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .mobile-menu-close {
     position: absolute;
