@@ -1,3 +1,14 @@
+// ─── MOBILE MENU ─────────────────────────────────────────────────────────────
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+  if (!menu) return;
+  const isOpen = menu.classList.contains('open');
+  menu.classList.toggle('open', !isOpen);
+  hamburger.classList.toggle('open', !isOpen);
+  document.body.style.overflow = isOpen ? '' : 'hidden';
+}
+
 // ─── NAV SCROLL EFFECT ───────────────────────────────────────────────────────
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
