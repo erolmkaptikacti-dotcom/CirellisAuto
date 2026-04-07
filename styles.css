@@ -47,6 +47,12 @@
     flex-direction: column;
     line-height: 1;
   }
+  .nav-logo a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
   .nav-logo-main {
     font-family: var(--font-display);
     font-size: 22px;
