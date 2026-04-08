@@ -655,6 +655,18 @@
     border-bottom-color: rgba(255,255,255,0.1);
   }
 
+  /* FLEET DETAILING PACKAGES PHOTO BACKGROUND */
+  .fleet-bg {
+    background-color: #0f0f0f;
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .fleet-bg .package-name { color: var(--white); }
+  .fleet-bg .package-desc { color: var(--grey-xlight); }
+  .fleet-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
   .service-detail-sidebar {
     position: sticky;
     top: 100px;
