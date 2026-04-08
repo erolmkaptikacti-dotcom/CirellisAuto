@@ -251,7 +251,7 @@
             body: data,
           }),
           // SMS via Vercel function
-          fetch('https://YOUR_VERCEL_URL/api/notify', {
+          fetch('https://cirellis-auto.vercel.app/api/notify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(json),
