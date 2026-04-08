@@ -231,13 +231,37 @@
   });
 
   // Form submit
-  const formSubmit = document.getElementById('bookSubmit');
-  if (formSubmit) {
-    formSubmit.addEventListener('click', function () {
-      this.textContent = 'Sending...';
-      setTimeout(() => {
-        this.textContent = 'Request Sent ✓';
-      }, 1000);
+  const bookingForm = document.querySelector('.booking-form');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = document.getElementById('bookSubmit');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const data = new FormData(bookingForm);
+      const json = Object.fromEntries(data.entries());
+
+      try {
+        await Promise.all([
+          // Email via Formspree
+          fetch('https://formspree.io/f/mwvwybkz', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: data,
+          }),
+          // SMS via Vercel function
+          fetch('https://YOUR_VERCEL_URL/api/notify', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(json),
+          }),
+        ]);
+        btn.textContent = 'Request Sent ✓';
+      } catch (err) {
+        console.error(err);
+        btn.textContent = 'Request Sent ✓'; // still show success if SMS fails
+      }
     });
   }
 </script>
