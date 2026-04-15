@@ -657,9 +657,9 @@
 
   /* FLEET DETAILING PACKAGES PHOTO BACKGROUND */
   .fleet-bg {
-    background-color: #0f0f0f;
-    background-size: cover;
-    background-position: center 50%;
+    background-image: linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)), url('IMG_4103.png');
+    background-size: 160%;
+    background-position: center 55%;
   }
   .fleet-bg .package-name { color: var(--white); }
   .fleet-bg .package-desc { color: var(--grey-xlight); }
@@ -668,9 +668,9 @@
   }
 
   .maintenance-bg {
-    background-color: #0f0f0f;
-    background-size: cover;
-    background-position: center 50%;
+    background-image: linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)), url('IMG_4104.png');
+    background-size: 130%;
+    background-position: center 60%;
   }
   .maintenance-bg .package-name { color: var(--white); }
   .maintenance-bg .package-desc { color: var(--grey-xlight); }
