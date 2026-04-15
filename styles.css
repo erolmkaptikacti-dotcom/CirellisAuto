@@ -670,7 +670,7 @@
   .maintenance-bg {
     background-image: linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)), url('IMG_4104.png');
     background-size: 170%;
-    background-position: center 65%;
+    background-position: center 45%;
   }
   .maintenance-bg .package-name { color: var(--white); }
   .maintenance-bg .package-desc { color: var(--grey-xlight); }
