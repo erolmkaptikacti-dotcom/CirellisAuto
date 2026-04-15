@@ -616,9 +616,9 @@
   .ceramic-bg {
     background-image:
       linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
-      url('Ceramic Pic.JPG.png');
+      url('IMG_4132.jpeg');
     background-size: cover;
-    background-position: center 50%;
+    background-position: center 45%;
   }
   .ceramic-bg .package-name { color: var(--white); }
   .ceramic-bg .package-desc { color: var(--grey-xlight); }
