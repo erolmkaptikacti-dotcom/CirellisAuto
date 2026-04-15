@@ -667,6 +667,17 @@
     border-bottom-color: rgba(255,255,255,0.1);
   }
 
+  .maintenance-bg {
+    background-color: #0f0f0f;
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .maintenance-bg .package-name { color: var(--white); }
+  .maintenance-bg .package-desc { color: var(--grey-xlight); }
+  .maintenance-bg .service-package {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
   .service-detail-sidebar {
     position: sticky;
     top: 100px;
