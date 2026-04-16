@@ -589,7 +589,7 @@
   .full-detail-top-bg {
     background-image:
       linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
-      url('Tesla Interior.png');
+      url('IMG_0080.jpeg');
     background-size: cover;
     background-position: center 50%;
   }
@@ -602,7 +602,7 @@
   .full-detail-bottom-bg {
     background-image:
       linear-gradient(rgba(10,10,10,0.84), rgba(10,10,10,0.84)),
-      url('seats pic.png');
+      url('IMG_4140.jpeg');
     background-size: cover;
     background-position: center 40%;
   }
